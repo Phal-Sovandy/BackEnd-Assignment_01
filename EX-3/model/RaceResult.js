@@ -7,7 +7,7 @@ export class RaceResult {
   _id;
   _sportType;
   _duration;
-  _raceResult = [];
+
 
   constructor(id, sportType, duration) {
     this._id = id;

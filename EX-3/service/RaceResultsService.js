@@ -69,7 +69,7 @@ export class RaceResultsService {
   getTimeForParticipant(participantId, sport) {
     // TODO
     const target = this._raceResults.find(
-      (raceResult) => raceResult._id === participantId
+      (raceResult) => raceResult._id === participantId && raceResult._sportType === sport
     );
     if (target) {
       return target._duration;
